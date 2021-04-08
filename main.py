@@ -55,7 +55,7 @@ class Plate:
         self.image_size = Vec2(self.image.get_size())
         self.plate = ''
 
-        self.font = pygame.font.Font('UKNumberPlate.ttf', 290)
+        self.font = pygame.font.Font('assets/UKNumberPlate.ttf', 290)
 
         self.verts = [
             Vec(-1, -1, -1),
@@ -78,7 +78,7 @@ class Plate:
         ]
 
     def load_image(self):
-        self.image = pygame.image.load('blankNumPlate.jpg')
+        self.image = pygame.image.load('assets/blankNumPlate.jpg')
 
     def generate_number(self):
         no_iqz = string.ascii_uppercase.replace('I', '').replace('Q', '').replace('Z', '')
