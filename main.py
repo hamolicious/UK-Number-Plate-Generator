@@ -222,4 +222,4 @@ while True:
 	pygame.display.update()
 	clock.tick(fps)
 	delta_time = time() - frame_start_time
-	pygame.display.set_caption(f'Framerate: {int(clock.get_fps())}')
+	pygame.display.set_caption(f'{int(clock.get_fps())} Plates generated per second | {len(os.listdir("Locations"))} Total')
