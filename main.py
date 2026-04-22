@@ -97,12 +97,13 @@ class Plate:
 	def generate_number(self):
 		no_iqz = string.ascii_uppercase.replace(
 			'I', '').replace('Q', '').replace('Z', '')
+		no_iq = string.ascii_uppercase.replace('I', '').replace('Q', '')
 
 		plate = choice(no_iqz) + choice(no_iqz)
 		plate += choice(string.digits) + choice(string.digits)
 		plate += ' '
 
-		plate += choice(no_iqz) + choice(no_iqz) + choice(no_iqz)
+		plate += choice(no_iq) + choice(no_iq) + choice(no_iq)
 
 		self.plate = plate
 		return plate
